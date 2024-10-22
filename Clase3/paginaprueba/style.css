@@ -1,0 +1,30 @@
+
+div{
+    margin: 15px;
+    display: inline-block;
+}
+
+
+img {
+    margin: auto;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+
+.cafe--caramel {
+    margin: auto;
+    margin-left: 12px;
+
+}
+
+.cafe--shaken {
+    margin: auto;
+    margin-left: 3px;
+}
+
+.cafe--matcha {
+    margin: auto;
+    margin-left: 20px;
+}

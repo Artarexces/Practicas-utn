@@ -1,0 +1,21 @@
+body {
+    background-color: aqua;
+}
+
+img {
+    width: 380px;
+    height: 380px;
+}
+
+
+div {
+    display: flex;
+    align-items: center;
+}
+
+
+@media (max-width: 620px) {
+    div {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,34 @@
+
+/* Medidas de media queries */
+
+/* 480 px - 500 px mobile - celular */
+
+/* 780 px - tablet */ 
+
+/* 1020 px - 1280 px desktop - pc */ 
+
+
+
+
+@media (max-width: 500px) {
+    /* este valor es mi condicion si el ancho de la pantalla es menor o igual que el valor dado, dentro de esta propiedad todo lo que este adentro sera afectado */
+    body {
+    background-color: blue;
+    }
+}
+
+
+
+@media (min-width: 800px) {
+    body {
+        background-color: aqua;
+    }
+}
+
+
+/* pantallas medianas, aplicar el mismo estilo en base a dos medidas  */
+@media (min-width: 600px) and (max-width: 900px) {
+    body {
+        background-color: coral;
+    }
+}

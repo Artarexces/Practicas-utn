@@ -1,0 +1,107 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-image:url(./image/Paisaje.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.header-container{
+    display: flex;
+    align-items: center;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    text-align: center;
+    margin-top: 30px;
+}
+
+
+.logo {
+    font-size: 35px;
+    font-family: "cinzel";
+    color: white;
+}
+
+h1 , h3 ,a ,p {
+    color: white;
+    font-weight: 300;
+    margin: 5px;
+    text-decoration: none;
+    
+}
+
+.nav{
+    justify-content: space-between;
+    display: flex;
+    gap: 30px;
+    font-size: 20px;
+}
+
+a:hover {
+    transition: 1.3s cubic-bezier(.15,.07,.4,.97);
+    color: rgba(0, 0, 0, 0.5);
+    border-bottom: 1px solid white;
+}
+
+.call-to {
+    width: 110px;
+    height: 60px;
+    border: none;
+    border-radius: 5px;
+    font-size: 17px;
+    font-weight: 400;
+    font-style: oblique;
+    cursor: pointer;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    margin: 100px;
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin: auto;
+    text-align: center;
+    font-size: 50px;
+}
+
+.title {
+    font-family: "cinzel";
+}
+
+.sub-title {
+    font-family: "manrope";
+    font-size: 35px;
+}
+
+.p-container {
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    gap: 100px;
+    margin-top: 70px;
+}
+
+.parraf {
+    background-color: white;
+    border-radius: 15px;
+    border: 1px solid transparent;
+    color: black;
+    width: 310px;
+    height: 90px;
+    padding: 15px;
+    gap: 50px;
+    box-sizing: content-box;
+    text-align: center;
+    font-family: "manrope";
+    font-weight: 500;
+}
+
