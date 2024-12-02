@@ -39,4 +39,51 @@ El sitio está compuesto de las siguientes secciones principales:
 - **Google Fonts**: Uso de tipografías personalizadas como *Cinzel*, *Karla*, *Cormorant Garamond* y *Apple Garamond*.
 - **Font Awesome**: Para iconos interactivos de búsqueda, usuario, carrito y redes sociales.
 
+# Funcionalidades JavaScript del Proyecto
 
+Este archivo describe las funcionalidades desarrolladas con JavaScript para agregar interactividad a la página web.
+
+## 1. Modo Oscuro
+Se implementó un modo oscuro que permite a los usuarios alternar entre los modos claro y oscuro mediante un botón interactivo. Además, el ícono del botón cambia dinámicamente para indicar el modo activo.
+
+### Implementación
+```javascript
+let toggleMode = document.getElementById("toggle-mode");
+let themeIcon = document.getElementById("theme-icon");
+
+function darkMode() {
+    document.body.classList.toggle("dark-mode");
+
+    if (document.body.classList.contains("dark-mode")) {
+        themeIcon.classList.replace("fa-moon", "fa-sun");
+    } else {
+        themeIcon.classList.replace("fa-sun", "fa-moon");
+    }
+} 
+
+toggleMode.addEventListener("click", darkMode);
+
+# Funcionalidad del Menú Hamburguesa
+
+Este documento describe la implementación y el funcionamiento del menú hamburguesa, diseñado específicamente para la navegación en dispositivos móviles en la página web.
+
+## Descripción
+
+El **menú hamburguesa** es un componente de navegación diseñado para dispositivos móviles, que permite mostrar y ocultar el menú mediante botones interactivos. Este menú se activa al hacer clic en el icono del menú (botón "abrir") y se oculta al hacer clic en el icono de cierre (botón "cerrar").
+
+## Implementación
+
+A continuación, se muestra el código utilizado para implementar el menú hamburguesa en el proyecto:
+
+```javascript
+const nav = document.querySelector("#nav");
+const abrir = document.querySelector("#abrir");
+const cerrar = document.querySelector("#cerrar");
+
+abrir.addEventListener("click", () => {
+    nav.classList.add("visible"); // Muestra el menú añadiendo la clase "visible"
+});
+
+cerrar.addEventListener("click", () => {
+    nav.classList.remove("visible"); // Oculta el menú eliminando la clase "visible"
+});
