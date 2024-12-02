@@ -1,0 +1,669 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Menu de navegacion */
+.nav-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-content: center;
+    gap: 15px;
+    margin: 35px 18%;
+
+}
+
+.open-button{
+    background-color: #fff;
+    border: none;
+    display: none;
+}
+
+.close-button { 
+    border: none;
+    display: none;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-family: "cinzel";
+    text-decoration: none;
+    color: #000;
+    font-weight: lighter;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+.nav-bar{
+    display: flex;
+    gap: 30px;
+    margin: auto;
+    margin-top: 2%;
+}
+
+.nav-items {
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "karla";
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+
+
+
+.dMode{
+    font-size: 120%;
+    background-color: white;
+    cursor: pointer;
+    border:none;
+}
+
+*{
+    transition: background-color ease-out;
+}
+
+
+/* Modo oscuro */
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+/* Estilo general del header, footer y form en modo oscuro */
+body.dark-mode header{
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body.dark-mode .form-title,
+body.dark-mode .form-text{
+    color: #e2e0e0;
+}
+
+body.dark-mode span {
+    color: #ffffff;
+}
+
+body.dark-mode footer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+
+/* Navegación */
+body.dark-mode .nav-bar a.nav-items,
+body.dark-mode a.logo,
+body.dark-mode .footer-nav a.nav-items-footer {
+    color: #ffffff;
+}
+
+body.dark-mode .containerColection,
+body.dark-mode p.card-text,
+body.dark-mode p.card-price {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Botones */
+body.dark-mode .btn-custom, 
+body.dark-mode .btn-form {
+    background-color: #fff;
+    color: #000;
+}
+
+/* Ajustes footer */
+body.dark-mode footer .logo-footer,
+body.dark-mode footer .icon-footer {
+    color: #ffffff;
+}
+
+/* Otros */
+body.dark-mode .locationContainer {
+    background-color: #1e1e1e;
+    color: #ffffff;
+}
+
+body.dark-mode .card-body,
+body.dark-mode #title-image {
+    color: #000;
+}
+
+body.dark-mode .dMode,
+body.dark-mode i{
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+
+/* Iconos */ 
+
+.icons {
+    display: flex;
+    gap: 25px;
+    margin-top: 5px;
+}
+
+.icon {
+    color: #000;
+    font-size: 18px;
+}
+
+
+
+/* hero */
+
+.hero {
+    width: 100%;
+    height: 30.5rem;
+    background-image: url(./image/image6.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}
+
+.hero-container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+h1 {
+    font-family:'Apple Garamond Light', sans-serif;
+    width: 29.5%;
+    font-weight: 400;
+    font-size: 3.5rem;
+    font-style: normal;
+    line-height: 100%;
+    color: #fff;
+    flex-direction: row;
+    text-align: left;
+    margin-left: 3%;
+}
+
+.btn-custom {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 12.5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    width: 100%;
+    height: 40px;
+    margin-left: 6%;
+    margin-top: 20px;
+
+}
+
+.btn-hero {
+    width: 12%;
+    margin-left: 2.5%;
+}
+
+.btn-custom:hover {
+    color: #000;
+    background-color: #fff;
+    transition: ease 0.7s;
+}
+
+
+
+
+/* ABOUT */
+
+
+.about{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about-container {
+    height: 100%;
+    width: 30%;
+    margin: 3% 0;
+    text-align: center;
+}
+
+
+.text-about {
+    font-size: 18px;
+    font-weight: 400;
+    font-family: "poppins";
+}
+
+
+.learn-more{
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 89%;
+    color: blue;
+}
+
+
+
+/* Coleccion */
+
+
+
+.containerColection{
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    justify-content:center;
+    background-color: #fff3e6;
+    overflow: hidden;
+
+}
+
+.container-image{
+    width: 70%;
+    height: 300px;
+    overflow: hidden;
+    margin:auto;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+
+.container-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+.card-text {
+    font-weight: lighter;
+    line-height: 2;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.card-price{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 0;
+    cursor: pointer;
+}
+
+
+
+/* Formulario de contacto */ 
+
+
+.formulario {
+    display:flex ;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 60vh;
+    width: 100%;
+    margin: auto;
+}
+
+.form-title{
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #000;
+}
+
+span {
+    font-weight: bolder;
+    color: #000;
+}
+
+.form-text {
+    font-size: 20px;
+}
+
+.form-box{
+    width: 47%;
+    margin: auto;
+
+}
+
+.btn-form {    
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 11.5px;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    border-radius: 20px;
+    margin-top: 20px;
+    width: 8%;
+}
+
+
+/* Footer */ 
+
+
+footer {
+    margin: 0;
+    padding: 30px;
+    background-color: #000;
+}
+
+
+.footer-nav{
+    display: flex;
+    flex-direction: row;
+    height: 5vh;
+    align-content: center;
+    align-items: center;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.logo-footer {
+    font-size: 1.5em;
+    font-family: "cinzel";
+    text-decoration: none;
+    color: #fff;
+    font-weight: lighter;
+    font-weight: 600;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+
+.icon-footer{
+    color: #fff;
+    font-size: 18px;
+    text-decoration: none;
+    margin: 8px;
+}
+
+.nav-list {
+    margin: auto;
+}
+
+.nav-items-footer{
+    font-size: 14px;
+    text-decoration: none;
+    font-family: "karla";
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 10px;
+    margin-right: 10px;
+}
+
+
+/* location */
+
+
+.locationContainer {
+    display: flex;
+    align-items: center;
+    align-content:center;
+    justify-content: space-between;
+    width: 100%;
+    height: 5vh;
+    margin-top: 2%;
+    border-top: 1px solid #fff3e6;
+}
+
+
+.location {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: lighter;
+    margin-top:10px;
+}
+
+
+/* Media queris  - viewports chicos */ 
+
+
+@media (max-width: 786px) {
+
+    .nav-container {
+    justify-content: space-between;
+    }
+
+    .logo{
+        margin-top: 2%;
+    }
+
+    .icons{
+    display: none;
+    }
+
+    h1 {
+        font-size: 50px
+    }
+
+
+    .btn-form{
+        position: relative;
+        width: 65%;
+    }
+
+
+    .btn-hero {
+        position: relative;
+        width: 50%;
+    }
+
+
+
+    .containerColection {
+        height: 100%;
+    }
+
+
+    
+    .nav-items-footer{
+        font-size: 80%;
+    }
+
+    .icon-footer {
+        display: none;
+    }
+
+
+    .locationContainer {
+        display: none;
+    }
+
+}
+
+
+/* media queris - viewport mediano, correcciones - */ 
+
+
+
+@media (max-width: 931px) {
+
+    .logo-footer{
+        font-size: 90%;
+    }
+
+
+    .btn-hero { 
+        position: relative;
+        width: 30%;
+    }
+
+
+        
+    .nav-items-footer{
+        font-size: 80%;
+    }
+
+
+    .location {    
+        font-size: 80%;
+    }
+
+    .open-button,
+    .close-button {
+        display: block;
+        font-size: 1.5rem;
+        background-color: transparent ;
+    }
+
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #e2e0e0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    /*Aca lo que hice fue crear una clase desde css y darle la funcion desde Js */
+
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+
+    .nav-bar a.nav-items {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .nav-bar a.nav-items:hover {
+        color: #121212
+    }
+    
+    .nav-bar{ 
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .icons {
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+
+}
+
+
+/* media queris - viewport pequeños, correcciones  */
+
+
+
+@media (max-width: 628px) {
+    
+
+
+    h1 {
+        font-size: 45px;
+    }
+
+    .nav-items-footer {
+        font-size: 66%;
+
+    }
+
+    .logo-footer {
+        font-size: 80%;
+    }
+
+
+
+
+}
+
+
+
+@media screen and (max-width:550px) {
+
+    .open-button,
+    .close-button {
+        display: block;
+        font-size: 1.5rem;
+        background-color: transparent ;
+    }
+
+
+    .nav{
+        opacity: 0;
+        visibility: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        position: fixed;
+        gap: 1rem;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #e2e0e0;
+        padding: 2rem;
+        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .5);
+    }
+
+    /*Aca lo que hice fue crear una clase desde css y darle la funcion desde Js */
+
+
+    .nav.visible {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .nav-bar{ 
+        flex-direction: column;
+        align-items: end;
+    }
+
+    .nav-bar a.nav-items {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s ease;
+    }
+
+    .icons{ 
+        display: none;
+    }
+
+    .dMode {
+        display: none;
+    }
+
+    body.dark-mode .nav-container,
+    body.dark-mode .nav{
+        background-color: #121212;
+}
+}
